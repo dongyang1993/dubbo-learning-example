@@ -16,7 +16,7 @@ public class Config {
     @Bean
     public RegistryConfig registryConfig() {
         RegistryConfig registryConfig = new RegistryConfig();
-        registryConfig.setAddress("zookeeper://172.16.52.20:2181");
+        registryConfig.setAddress("zookeeper://192.168.254.128:2181");
         return registryConfig;
     }
 
