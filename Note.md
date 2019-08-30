@@ -15,3 +15,12 @@ dubbo默认会自动读取classpath: dubbo.properties配置文件(如果存在),
 
 #### 笔记4：
 用main方法启动的工程，要想dubbo能正常暴露服务或者消费服务，main方法一定不能退出，得让main方法一直等待
+synchronized (E.class) {
+	while (true) {
+		try {
+			E.class.wait();
+		} catch (Throwable e) {
+
+		}
+	}
+}
