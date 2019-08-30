@@ -11,7 +11,8 @@
 
     <dubbo:registry address="zookeeper://172.16.52.20:2181"/>
 
-    <dubbo:consumer retries="0" timeout="5000"/>
+    <!--这里配置的参数是全局的-->
+    <dubbo:consumer retries="0" timeout="5000" check="false"/>
     
     <dubbo:reference id="providerService" check="false" interface="org.dubbo.service.ProviderService"/>
 
