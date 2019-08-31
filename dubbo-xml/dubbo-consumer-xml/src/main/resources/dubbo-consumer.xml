@@ -14,6 +14,6 @@
     <!--这里配置的参数是全局的-->
     <dubbo:consumer retries="0" timeout="5000" check="false"/>
     
-    <dubbo:reference id="providerService" check="false" interface="org.dubbo.service.ProviderService"/>
+    <dubbo:reference id="hiService" check="false" interface="org.dubbo.service.HiService"/>
 
 </beans>

@@ -1,6 +1,6 @@
 package org.dubbo;
 
-import org.dubbo.service.ProviderService;
+import org.dubbo.service.HiService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application {
@@ -8,8 +8,8 @@ public class Application {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         context.start();
 
-        ProviderService providerService = context.getBean("providerService", ProviderService.class);
-        String pong = providerService.pong("Hi");
+        HiService hiService = context.getBean("hiService", HiService.class);
+        String pong = hiService.pong("Hi");
         System.out.println(pong);
     }
 }

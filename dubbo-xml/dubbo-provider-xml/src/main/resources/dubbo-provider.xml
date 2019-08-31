@@ -13,8 +13,8 @@
 
     <dubbo:protocol name="dubbo" port="20880"/>
 
-    <bean id="providerService" class="org.dubbo.service.impl.ProviderServiceImpl"/>
+    <bean id="hiService" class="org.dubbo.service.impl.HiServiceImpl"/>
 
-    <dubbo:service interface="org.dubbo.service.ProviderService" ref="providerService"/>
+    <dubbo:service interface="org.dubbo.service.HiService" ref="hiService"/>
 
 </beans>

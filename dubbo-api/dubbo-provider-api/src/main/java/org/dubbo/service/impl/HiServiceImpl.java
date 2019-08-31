@@ -1,10 +1,10 @@
 package org.dubbo.service.impl;
 
-import org.dubbo.service.ProviderService;
+import org.dubbo.service.HiService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ProviderServiceImpl implements ProviderService {
+public class HiServiceImpl implements HiService {
 
     @Override
     public String pong(String msg) {

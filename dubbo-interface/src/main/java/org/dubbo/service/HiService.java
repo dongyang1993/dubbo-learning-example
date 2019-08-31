@@ -1,6 +1,6 @@
 package org.dubbo.service;
 
-public interface ProviderService {
+public interface HiService {
 
     String pong(String msg);
 }
