@@ -9,7 +9,6 @@ import org.springframework.context.annotation.PropertySource;
 
 @EnableDubbo(scanBasePackages = "org.dubbo")
 @PropertySource("classpath:dubbo-provider.properties")
-@ComponentScan(value = {"org.dubbo"})
 @Configuration
 public class Config {
 
